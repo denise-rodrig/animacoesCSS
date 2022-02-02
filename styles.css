@@ -1,0 +1,81 @@
+h4{
+    text-align: center;
+    color: palevioletred;
+    font-size:x-large;
+}
+main{
+    margin-top: 4rem;
+    border: solid 2px;
+    padding: 4rem;
+    display: flex;
+    justify-content: flex-start;
+}
+/*animação de carregamento-----*/
+div#load{
+    width: 50px;
+    height: 50px;
+    border: orangered 6px solid;
+    border-radius: 50%;
+    border-top-color: transparent;
+
+    animation: nomeload 2s linear infinite alternate-reverse;
+}
+@keyframes nomeload{
+    to{
+        transform: rotate(360deg) scale(2);
+    }
+}
+/*animação 2*/
+.loadtwo{
+    border: 2px solid;
+    width: 200px;
+    height: 40px;
+    margin-left: 2.6rem;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    
+}
+#azul{
+    border-radius: 50%;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    animation: azul 1s infinite alternate-reverse;
+}
+@keyframes azul {
+    to{
+        transform: translateY(10px);
+    }
+}
+#amarelo{
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: rgb(243, 243, 40);
+    width:20px ;
+    height: 20px;
+    animation: amarelo 1s infinite alternate-reverse;
+
+}
+@keyframes amarelo {
+    to{
+        transform: translateY(-7px);
+    }
+}
+#vermelho{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: rgb(180, 43, 43);
+    width:20px ;
+    height: 20px;
+    animation: vermelho 1s infinite alternate-reverse;
+
+}
+@keyframes vermelho {
+    to{
+        transform: translateY(10px);
+    }
+}
