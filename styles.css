@@ -6,14 +6,15 @@ h4{
 main{
     margin-top: 4rem;
     border: solid 2px;
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     justify-content: flex-start;
+    gap: 2rem;
 }
 /*animação de carregamento-----*/
 div#load{
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     border: orangered 6px solid;
     border-radius: 50%;
     border-top-color: transparent;
@@ -77,5 +78,64 @@ div#load{
 @keyframes vermelho {
     to{
         transform: translateY(10px);
+    }
+}
+
+/*animação 3-----------------*/
+div#sombra{
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 10px 20px 3px rgba(78, 78, 78, 0.842);
+    position: absolute;
+    margin-left: -0.6em;
+    margin-top: -9px;
+    opacity: 0.4;
+    animation-name: sombra;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in;
+}
+#bolavermelha{
+    width: 45px;
+    height: 45px;    
+    border-radius: 50%;
+    border:none;
+    margin-left: 7px;
+    margin-right: 10px;
+    background-color: rgb(163, 36, 36) ;
+    animation-name: pula;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in;
+    
+
+}
+@keyframes pula {
+    do{
+        transform: translateY(40px);
+        transition-property: all;
+    }
+    from{
+       transform: translateY(23px);
+       width: 60px;
+       height: 45px;
+
+      
+     
+       
+
+    }
+}
+@keyframes sombra {
+    do{
+        transition-property: all;
+    }
+    from{
+        width: 60px;
+        opacity: 0.8;
+       
     }
 }
