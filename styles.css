@@ -5,11 +5,11 @@ h4{
 }
 main{
     margin-top: 4rem;
-    border: solid 2px;
     padding: 2rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 2rem;
+    flex-wrap:wrap;
 }
 /*animação de carregamento-----*/
 div#load{
